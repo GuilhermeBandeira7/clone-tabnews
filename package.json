@@ -4,9 +4,11 @@
   "description": "Implementação do https://www.tabnews.com.br/ para o https://curso.dev/",
   "main": "index.js",
   "scripts": {
-    "dev" : "next dev",
+    "dev": "next dev",
     "build": "next build",
-    "start" : "next start"
+    "start": "next start",
+    "lint:check": "prettier --check .",
+    "lint:fix": "prettier --write ."
   },
   "author": "",
   "license": "MIT",
@@ -15,7 +17,10 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
-   "engines": {
+  "engines": {
     "node": ">=18.x"
+  },
+  "devDependencies": {
+    "prettier": "^3.6.2"
   }
 }
